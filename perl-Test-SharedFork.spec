@@ -8,13 +8,13 @@
 Summary:	Test::SharedFork - fork test
 #Summary(pl.UTF-8):	
 Name:		perl-Test-SharedFork
-Version:	0.16
+Version:	0.19
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Test/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	ee0469b14d48bbd651f2ec5465f61a52
+# Source0-md5:	cfc26372a45bb081abf24e3dfcf549c6
 # generic URL, check or change before uncommenting
 #URL:		http://search.cpan.org/dist/Test-SharedFork/
 BuildRequires:	perl-devel >= 1:5.8.0
