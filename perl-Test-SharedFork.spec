@@ -1,12 +1,11 @@
 #
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
-#
+
 %define		pdir	Test
 %define		pnam	SharedFork
 %include	/usr/lib/rpm/macros.perl
 Summary:	Test::SharedFork - fork test
-#Summary(pl.UTF-8):	
 Name:		perl-Test-SharedFork
 Version:	0.19
 Release:	1
@@ -15,8 +14,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Test/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	cfc26372a45bb081abf24e3dfcf549c6
-# generic URL, check or change before uncommenting
-#URL:		http://search.cpan.org/dist/Test-SharedFork/
+URL:		http://search.cpan.org/dist/Test-SharedFork/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
@@ -31,11 +29,6 @@ Test::SharedFork is utility module for Test::Builder.
 This module makes fork(2) safety in your test case.
 
 This module merges test count with parent process & child process.
-
-
-
-# %description -l pl.UTF-8
-# TODO
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
