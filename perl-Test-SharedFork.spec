@@ -7,13 +7,13 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	Test::SharedFork - fork test
 Name:		perl-Test-SharedFork
-Version:	0.19
+Version:	0.29
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Test/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	cfc26372a45bb081abf24e3dfcf549c6
+# Source0-md5:	acbc5baf82d78edf3771dfecaacd2345
 URL:		http://search.cpan.org/dist/Test-SharedFork/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -51,7 +51,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Changes README
+%doc Changes README.md
 %{perl_vendorlib}/Test/*.pm
 %{perl_vendorlib}/Test/SharedFork
 %{_mandir}/man3/*
