@@ -4,7 +4,6 @@
 
 %define		pdir	Test
 %define		pnam	SharedFork
-%include	/usr/lib/rpm/macros.perl
 Summary:	Test::SharedFork - fork test
 Summary(pl.UTF-8):	Test::SharedFork - testowanie funkcji fork
 Name:		perl-Test-SharedFork
